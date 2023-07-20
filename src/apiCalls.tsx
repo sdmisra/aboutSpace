@@ -1,6 +1,6 @@
 const url = 'https://api.spaceflightnewsapi.net/v4/articles/'
 
-const getAllArticles =  async (path :string = url) => {
+const getArticles =  async (path :string = url) => {
 
   return await fetch(path)
   .then(response => {
@@ -14,4 +14,4 @@ const getAllArticles =  async (path :string = url) => {
   });
 }
 
-export default getAllArticles;
+export default getArticles;
