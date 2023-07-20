@@ -22,7 +22,7 @@ This project was a 'hackathon' challenge for our cohort in our final module at T
 
 ## Contributors:
 [//]: <>
-[Shane Misra](https://github.com/sdmisra) /
+[Shane Misra](https://github.com/sdmisra) 
 
 
 ## Learning Goals:
