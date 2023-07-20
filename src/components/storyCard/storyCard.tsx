@@ -8,11 +8,13 @@ interface Story {
 
 const StoryCard = (props : Story )=> {
   const info = props.details
-  console.log(info)
+  const pubDate = info.published_at.slice(0,10).split('-')
   return (
     <section className='story-card'>
       <img className='thumb' src={info.image_url} alt={info.title}></img>
       <div className='text-details'>
+        <span>Source: {info.news_site}</span>
+        <span>Published: {`${pubDate[1]}-${pubDate[2]}-${pubDate[0]}`}</span>
         <h4 className="story-title">{info.title}</h4>
         <p className='story-summary'>{info.summary}</p>
         <a    
@@ -21,7 +23,7 @@ const StoryCard = (props : Story )=> {
         target="_blank"
         rel="noopener noreferrer"
             >
-              Link
+              Full Article
         </a>
       </div>
     </section>

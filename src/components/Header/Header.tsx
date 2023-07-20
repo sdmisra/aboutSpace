@@ -11,7 +11,7 @@ const Header = (props: HeaderProps) =>{
 return (
 <header className="app-header">
   <h1>
-  About Space
+  Space News
   </h1>
   {props.prevPath?.length > 0 && <button onClick={()=> props.scrollPage(props.prevPath)}>Previous</button>}
   <button onClick={()=>props.scrollPage(props.nextPath)}>More Results</button>
