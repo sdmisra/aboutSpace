@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# About Space:
+[//]: <>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This straightforward TypeScript web application enables users to look up recent articles written about space. It generally enables browsing of 10 articles per page, with buttons to navigate forward and backwards through the dataset and links to the articles in full.
 
-## Available Scripts
+## Technologies
+- React
+- Typescript
 
-In the project directory, you can run:
+- API from https://api.spaceflightnewsapi.net/v4/docs/
 
-### `npm start`
+#### Application is deployed live at:
+[Vercel](https://spacenewsbrowser.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Preview of App:
+[//]: <>
+<img width="1678" alt="Screenshot 2023-07-20 at 2 27 50 PM" src="https://github.com/sdmisra/aboutSpace/assets/117242156/f318ce04-036d-4ffe-9855-47dcbfe4f57e">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Context:
+[//]: <>
+This project was a 'hackathon' challenge for our cohort in our final module at Turing, with the goal being the creation of an app of our choice within a very limited timeframe. I chose to practice my typescript skills.
 
-### `npm test`
+## Contributors:
+[//]: <>
+[Shane Misra](https://github.com/sdmisra) /
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Learning Goals:
+[//]: <>
+- Rise to the challenge of creating an application using good coding standards within a short window of time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Future Feature Ideas:
+[//]: <>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Enable user to preview the authorship of a link with a logo and link to the parent company of the journalistic source. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation Instructions:
+[//]: <>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Clone down this repo
+- Install dependencies by using ‘npm install’ in your terminal within the root directory.
+- To host website on your local machine, run ’npm start’ in terminal.
+- A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application!
