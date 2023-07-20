@@ -1,12 +1,8 @@
 .stories-browser {
   display:flex;
   flex-direction: column;
-  overflow: scroll;
   align-items: center;
-  background: aliceblue;
   justify-content: space-evenly;
-  padding: 1rem;
-  margin: .5rem;
 }
 
 .buttons {

@@ -4,12 +4,17 @@
 .story-card {
   display:flex;
   flex-direction: row;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
   padding: .5rem;
   margin: .5rem;
+  width: 65%;
 }
 .thumb {
-  max-height: 8rem;
-  max-width: 10rem;
+  height: 8rem;
+  width: 10rem;
 }
 
 .text-details {
@@ -21,5 +26,6 @@
 }
 
 .story-summary {
+  width: 40rem;
   font-size: 12px;
 }
