@@ -1,4 +1,32 @@
 .story-title {
-  font: 5rem;
-  color: white;
+  color: rgb(8, 54, 8);
+}
+.story-card {
+  display:flex;
+  flex-direction: row;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+  min-width: 65%;
+  min-height: 12%;
+}
+.thumb {
+  height: 8rem;
+  width: 10rem;
+}
+
+.text-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem;
+  margin: .25rem;
+}
+
+.story-summary {
+  width: 40rem;
+  font-size: 12px;
 }

@@ -1,29 +1,17 @@
-import React, {Dispatch, SetStateAction} from 'react'
+import React from 'react'
 import { ContainerProps } from '../../interfaces/containerProps'
 import StoryCard from '../StoryCard/StoryCard'
-import getArticles from '../../apiCalls'
-import './CardContainer'
+import './CardContainer.css'
 
 interface container {
   stories: ContainerProps[];
   prevPath: string;
   nextPath: string;
-  setArticles: Dispatch<SetStateAction<never[]>>
-  setNextPath: Dispatch<SetStateAction<string>>
-  setPrevPath: Dispatch<SetStateAction<string>>
+  scrollPage:(path: string) => void
 }
 
 const CardContainer = (props : container) => {
   console.log(props.prevPath, props.nextPath)
-
-  const scrollPage = (path: string) => {
-    getArticles(path).then( data => {
-      props.setArticles(data.results)
-      props.setNextPath(data.next)
-      props.setPrevPath(data.previous)
-    }
-    )
-  }
 
   const stories = props.stories.map((story, i) => <StoryCard details={story} key={i}/>)
 
@@ -31,8 +19,8 @@ const CardContainer = (props : container) => {
     <section className="stories-browser">
       {stories}
       <div className='buttons'>
-        <button onClick={()=> scrollPage(props.prevPath)}>Previous</button>
-        <button onClick={()=>scrollPage(props.nextPath)}>More Results</button>
+      {props.prevPath?.length > 0 && <button onClick={()=> props.scrollPage(props.prevPath)}>Previous</button>}
+        <button onClick={()=>props.scrollPage(props.nextPath)}>More Results</button>
       </div>
     </section>
   )
