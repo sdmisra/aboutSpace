@@ -22,11 +22,25 @@ function App() {
     console.log(articles)
   }, [articles])
 
+
+  const scrollPage = (path: string) => {
+    getArticles(path).then( data => {
+      setArticles(data.results)
+      setNextPath(data.next)
+      setPrevPath(data.previous)
+    }
+    )
+  }
+
+
   return (
     <div className="App">
-      <Header />
-      <CardContainer stories = {articles} nextPath= {nextPath} prevPath={prevPath} setArticles={setArticles}
-      setNextPath={setNextPath} setPrevPath={setPrevPath}/>
+      <Header nextPath={nextPath} prevPath={prevPath} scrollPage={scrollPage}/>
+      <CardContainer 
+      stories={articles} 
+      nextPath= {nextPath} 
+      prevPath={prevPath} 
+      scrollPage={scrollPage}/>
       <Footer />
     </div>
   );
