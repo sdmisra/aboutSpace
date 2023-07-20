@@ -10,7 +10,8 @@
   border-radius: 1rem;
   padding: .5rem;
   margin: .5rem;
-  width: 65%;
+  min-width: 65%;
+  min-height: 12%;
 }
 .thumb {
   height: 8rem;

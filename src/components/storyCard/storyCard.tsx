@@ -11,7 +11,7 @@ const StoryCard = (props : Story )=> {
   console.log(info)
   return (
     <section className='story-card'>
-      <img className='thumb' src={info.image_url}></img>
+      <img className='thumb' src={info.image_url} alt={info.title}></img>
       <div className='text-details'>
         <h4 className="story-title">{info.title}</h4>
         <p className='story-summary'>{info.summary}</p>
