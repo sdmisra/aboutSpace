@@ -1,0 +1,6 @@
+.stories-browser {
+  display:flex;
+  flex-direction: column;
+  overflow: scroll;
+  background: aliceblue;
+}
