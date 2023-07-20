@@ -19,7 +19,6 @@ function App() {
         setPrevPath(data.previous)
       })
     }
-    console.log(articles)
   }, [articles])
 
 
