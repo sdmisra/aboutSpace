@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import './App.css';
 import getArticles from '../../apiCalls';
-import CardContainer from '../CardContainer/CardContainer';
+import CardContainer from '../cardContainer/cardContainer';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 

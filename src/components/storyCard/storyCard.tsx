@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerProps } from '../../interfaces/containerProps';
-import './StoryCard.css'
+import './storyCard.css'
 
 interface Story {
   details: ContainerProps

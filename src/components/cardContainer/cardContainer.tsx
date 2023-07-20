@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContainerProps } from '../../interfaces/containerProps'
-import StoryCard from '../StoryCard/StoryCard'
-import './CardContainer.css'
+import StoryCard from '../storyCard/storyCard'
+import './cardContainer.css'
 
 interface container {
   stories: ContainerProps[];
